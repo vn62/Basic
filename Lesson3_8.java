@@ -3,21 +3,23 @@ package com.ex.Basic_1;
 import java.util.Scanner;
 
 public class Lesson3_8 {
+    public static void main(String[] args) {
+        new Lesson3_8();
+    }
+
     public Lesson3_8() {
-        System.out.println("Lesson 3_8");
         System.out.println("Введите 1 число");
-        // int a = 123;
-        int a = Basics.scan.nextInt();
+        int a = Basics.scan.nextInt(); // int a = 123;
         System.out.println("Введите 2 число");
         //int b = 3451;
-        int b = Basics.scan.nextInt();
+        int b = Basics.scan.nextInt();//int b = 3451;
 
         int temp1 = a;
         int temp2 = b;
         int number1 = 0;
         int number2 = 0;
 
-        System.out.print("Результат 3_8: цифры входящие в запись обоих чисел ");
+        System.out.print("Цифры входящие в запись обоих чисел ");
         while (temp1 > 0) {
             number1 = temp1 % 10;
             temp2 = b;
